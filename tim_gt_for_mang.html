@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sreach_pt = parseInt(prompt("nhập pt để so sánh:"));
+    let number = [1, -4, 5, 3, 6];
+    for (let i = 0; i < number.length ; i++) {
+        if (sreach_pt == number[i]) {
+            document.write("vị trí của nó là : " + i + " trong mảng ");
+        }else {
+            document.write("khong có phần tử nào trong mảng ");
+            break;
+        }
+    }
+</script>
+</body>
+</html>
