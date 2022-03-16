@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array_one = [2, 4, 6, -5, 10, 12];
+    let max = array_one[0];
+    let index = 0;
+    for (let i = 0; i < array_one.length; i++) {
+        if (array_one[i] > max){
+            max = array_one[i];
+            index = i;
+        }
+    }
+    alert("max: " + max + " at position " + index);
+</script>
+</body>
+</html>
