@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let english = ["hello", "bye", "array", "mouse", "computer"];
+    let dich = prompt("dịch 1 trong các từ trên này: hello, bye ,array , mouse, computer")
+    let vietnamese = ["xin chào", "tạm biệt", "mảng", "con chuột", "máy tính"];
+    let viTri = english.indexOf(dich);
+    if (viTri == -1) {
+        alert("không có trong từ điển!")
+    }else{
+        alert(vietnamese[viTri]);
+    }
+</script>
+</body>
+</html>
