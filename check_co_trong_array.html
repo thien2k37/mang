@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let a = [];
+  for (let i = 0; i < 5; i++) {
+    let aa = +prompt("nhập số thứ " + i);
+      a.push(aa);
+  }
+  let check_a = +prompt("check a for array và xóa nó: ");
+  let viTri = a.indexOf(check_a)   ;
+    if (viTri == - 1) {
+      document.write("ko co");
+    }else {
+      a.splice(viTri, 1);
+      console.log(a);
+    }
+
+</script>
+</body>
+</html>

@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
-    let array_one = [2, 4, 6, -5, 10, 12];
-    let max = array_one[0];
-    let index = 0;
-    for (let i = 0; i < array_one.length; i++) {
-        if (array_one[i] > max){
-            max = array_one[i];
-            index = i;
+    let count = 0;
+    let max = 0;
+    let a = [1, 2, 3, 5, 7, 9, 22, 14, 36, 10];
+    for (let i = 0; i < a.length ; i++) {
+        if (a[i] > max) {
+            max = a[i];
+            count = i;
         }
     }
-    alert("max: " + max + " at position " + index);
+    document.write(max + " vị trí của nó trong mảng : " + count);
 </script>
 </body>
 </html>

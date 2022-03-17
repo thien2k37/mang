@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    /*let a = [1, -2, -3, -5, -7, -9, 22, 14, 36];
+    .sort(function(a, b){return b - a});
+    document.write(a + "<br>");*/
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        let a = +prompt("nhập phần tử vào mảng: ");
+        arr.push(a);
+    }
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] > arr[i]) {
+                let index = arr[j];
+                arr[j] = arr[i];
+                arr[i] = index;
+            }
+        }
+    }
+    document.write(arr + "<br>");
+</script>
 </body>
 </html>
